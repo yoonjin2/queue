@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall
 TARGET=queue
-OBJS=queue.o task.o main.o front_rear.o size.o pop.o push.o init_queue.o empty_queue.o
+OBJS=queue.o front_rear.o size.o pop.o push.o init_queue.o empty_queue.o main.o task.o
 
 $(TARGET):	$(OBJS)
 	$(CC) -o $@ $(OBJS)
@@ -33,5 +33,7 @@ task.o:	task.c
 
 main.o:	main.c
 	$(CC) -c -o main.o main.c
+back.o:	front_rear.c
+	$(CC) -c -o front_rear.o front_rear.c
 clean:
 	rm $(OBJECT) $(TARGET)
