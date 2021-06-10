@@ -21,7 +21,6 @@ push.o:	push.c
 	$(CC) -c -o push.o push.c
 empty_queue.o:	empty_queue.c
 	$(CC) -c -o empty_queue.o empty_queue.c
-
 queue.o:	queue.c
 	$(CC) -c -o queue.o queue.c
 
