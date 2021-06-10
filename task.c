@@ -5,7 +5,7 @@
 void task(queue *que)
 {
     char command[6]={'\0',};
-    scanf("%s", command);
+    scanf("%5s", command);
     if(strcmp(command,"pop")==0)
         pop(que);
     else if(strcmp(command,"size")==0)
